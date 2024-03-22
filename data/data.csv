@@ -1,0 +1,4 @@
+label,color,start,end
+fossile,grey,100,0
+solar,yellow,0,30
+wind,blue,0,70

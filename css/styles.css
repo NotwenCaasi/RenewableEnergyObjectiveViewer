@@ -1,28 +1,23 @@
+#scrollable-rectangle::-webkit-scrollbar {
+  display: none; /* This will hide the scrollbar in WebKit browsers */
+}
+#scrollable-rectangle {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 #scrollable-rectangle {
   position: relative;
   width: 100%;
   max-width: 600px;
   height: 200px;
   border: 2px solid grey;
+  overflow: hidden;
   overflow-y: scroll;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
 }
 
-#scrollable-rectangle::-webkit-scrollbar {
-  display: none; /* This will hide the scrollbar in WebKit browsers */
-}
-
-#fill {
-  height: 2000px;
-  width: 100%;
-}
-
-#green-fill {
+.color-segment {
   position: absolute;
   top: 0;
   left: 0;
-  width: 0%;
-  height: 2000px;
-  background-color: green;
+  height: 100%;
 }
