@@ -15,7 +15,7 @@ async function fetchCSVData(url) {
 };
 
 async function loadAndProcessCSV() {
-  data = await fetchCSVData("../data/data.csv")
+  data = await fetchCSVData("../data/data1.csv")
   console.log(data);
 
   // Now that you have `data`, you can proceed with creating the segments

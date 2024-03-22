@@ -27,3 +27,13 @@
   left: 0;
   height: 100%;
 }
+
+#scrollable-rectangle2 {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  border: 2px solid grey;
+  overflow: hidden;
+  overflow-y: scroll;
+}
