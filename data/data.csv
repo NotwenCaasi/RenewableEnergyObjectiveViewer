@@ -1,4 +1,5 @@
-label,color,start,end
-fossile,grey,100,0
-solar,yellow,0,30
-wind,blue,0,70
+label,    color,  start,  end
+fossile,  grey,   90,     0
+solar,    yellow, 0,      30
+wind,     green,  0,      60
+hydro,    blue,   10,     10
