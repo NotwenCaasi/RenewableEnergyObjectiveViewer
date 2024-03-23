@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive Rectangles</title>
-    <link rel="stylesheet" href="../css/styles2.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/styles2.css" />
+  </head>
+  <body>
+    <div id="rectangleA" class="rectangle rectangle-a">
+      <div class="timeline-container">
+        <div class="timeline-marker" data-year="2000"></div>
+        <div class="timeline-marker" data-year="2010" style="left: 20%;"></div>
+        <div class="timeline-marker" data-year="2020" style="left: 40%;"></div>
+        <div class="timeline-marker" data-year="2030" style="left: 60%;"></div>
+        <div class="timeline-marker" data-year="2050" style="left: 100%;"></div>
+        <div class="timeline-point"></div>
+        <!-- Circular point -->
+      </div>
 
-<div id="rectangleA" class="rectangle rectangle-a">
-    <div id="rectangleA1" class="rectangle rectangle-a1">
+      <div id="rectangleA1" class="rectangle rectangle-a1">
         <div class="fill" id="fillA1"></div>
-    </div>
-    <div id="rectangleA2" class="rectangle rectangle-a2">
+      </div>
+      <div id="rectangleA2" class="rectangle rectangle-a2">
         <div class="fill" id="fillA2"></div>
+      </div>
     </div>
-</div>
 
-<script src="../js/script2.js"></script>
-</body>
+    <script src="../js/script2.js"></script>
+  </body>
 </html>

@@ -1,0 +1,5 @@
+fossile   grey
+wind      green
+solar     yellow
+wood      brown
+biogas    red

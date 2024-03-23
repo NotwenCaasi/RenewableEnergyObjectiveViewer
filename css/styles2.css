@@ -7,16 +7,22 @@
 
 .rectangle-a {
     width: 300px;
-    height: 200px;
+    height: 220px; /* Increased height to accommodate the timeline */
     background-color: white;
     border: 2px solid black;
     position: relative;
+    padding-top: 30px; /* Space for the timeline */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.rectangle-a1, .rectangle-a2 {
-    width: 140px;
-    height: 160px;
-    background-color: grey;
+.timeline-container {
+    width: 90%; /* Adjust based on your preference */
+    height: 20px;
+    position: relative;
+    margin-bottom: 10px;
+    align-self: center; /* Center the timeline in Rectangle A */
 }
 
 .rectangle-a1 {
@@ -41,4 +47,39 @@
     position: absolute;
     bottom: 0; /* Position from bottom */
     transition: height 0.5s;
+}
+
+.timeline-container {
+    width: 100%;
+    height: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-marker {
+    position: absolute;
+    bottom: 0;
+    width: 2px;
+    height: 20px;
+    background-color: black;
+}
+
+.timeline-marker::after {
+    content: attr(data-year);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 25px;
+    font-size: 12px;
+}
+
+.timeline-point {
+    position: absolute;
+    bottom: 0;
+    left: 0; /* Start point at the beginning of the timeline */
+    width: 10px; /* Size of the circular point */
+    height: 10px; /* Size of the circular point */
+    background-color: blue; /* Color of the circular point */
+    border-radius: 50%; /* Make it circular */
+    transform: translateY(-5px) translateX(-5px); /* Center it on the timeline */
 }
